@@ -1,0 +1,89 @@
+
+body 
+  overflow-x: hidden
+a 
+  text-decoration: none
+
+
+    
+.sidebar
+  z-index: 30
+  position: fixed
+  top: 0
+  right: 0
+  height: 100vh
+  color: #ffffff
+  width: 74px
+  background-image: url(../img/nav-bg.png)
+  background-repeat: repeat
+  // +r(900)
+  //   display: none
+  .menu
+    position: relative
+    width: 100%
+    text-align: center
+    &_burger
+      margin: 40px auto
+      width: 30px
+      cursor: pointer
+    .line
+      text-align: center
+      border-bottom: 3px solid #fff
+      margin-bottom: 5px
+      width: 30px
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.section
+  background-position: center 
+  background-size: cover
+  position: absolute
+  top: 0
+  left: 0
+  padding: 10vh
+  height: 100vh
+  width: 100%
+  vertical-align: center
+  background-color: #000000
+  color: #ffffff
+  opacity: 0
+  transition: all .5s ease
+  &:nth-child(odd)
+    background-color: #00d0a0
+    +r(902)
+      position: relative
+      opacity: 1!important
+      [data-stagger]
+        opacity: 1!important
+.is-active
+  opacity: 1
+.left-content
+  position: absolute
+  width: 500px
+  height: 100vh
+  top: 0
+  left: 0
+  background-color: blue
+  +r(1000)
+    width: 100vw
+    position: relative
+    height: 300px    
+.content 
+  width: 100vw    
+  height: 100vh
+  background-color: rgba(142,133,12,.7)
+  +r(902)
+      position: relative

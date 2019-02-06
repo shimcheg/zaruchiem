@@ -1,0 +1,35 @@
+---
+title: Страница со слайдером
+---
+{% extends "layouts/_layout.html" %}
+
+
+{% block content %}
+{% include "partials/_header.html" %}	
+{% include "partials/_aside-menu.html" %}	
+    
+<div class="wrapper">
+    <div class="section is-active" data-slide="1" style="background-image: linear-gradient(to right, rgba(0, 7, 13, 0.85), rgba(0, 7, 13, 0)),url(/img/bg-1.jpg)">
+        <!-- <h1 data-stagger>Hero 1</h1> -->
+        <!-- <p data-stagger>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, recusandae?</p> -->
+    </div>
+    <div class="section" data-slide="2" style="background-image: linear-gradient(to right, rgba(0, 7, 13, 0.85), rgba(0, 7, 13, 0)),url(/img/bg-2.jpg)">
+        <h1 data-stagger>Hero 2</h1>
+        <p data-stagger>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, recusandae?</p>
+    </div>
+    <div class="section" data-slide="3" style="background-image: linear-gradient(to right, rgba(0, 7, 13, 0.85), rgba(0, 7, 13, 0)),url(/img/bg-3.jpg)">
+        <h1 data-stagger>Hero 3</h1>
+        <p data-stagger>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, recusandae?</p>
+    </div>
+    <div class="section" data-slide="4" style="background-image: linear-gradient(to right, rgba(0, 7, 13, 0.85), rgba(0, 7, 13, 0)),url(/img/bg-4.jpg)">
+        <h1 data-stagger>Hero 4</h1>
+        <p data-stagger>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, recusandae?</p>
+    </div>
+    <div class="section" data-slide="5" style="background-image: linear-gradient(to right, rgba(0, 7, 13, 0.85), rgba(0, 7, 13, 0)),url(/img/bg-5.jpg)">
+        <h1 data-stagger>Hero 5</h1>
+        <p data-stagger>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, recusandae?</p>
+    </div>
+</div>
+    
+
+{% endblock %}

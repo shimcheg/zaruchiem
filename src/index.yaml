@@ -1,0 +1,7 @@
+ProjectTitle: zaruchiem
+
+PageList:
+- file: main.html
+  ready: 50
+- file: news.html
+  ready: 50

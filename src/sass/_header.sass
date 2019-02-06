@@ -1,0 +1,79 @@
+.header
+  z-index: 20
+  position: absolute
+  width: 100%
+  color: #ffffff
+  padding-top: 50px
+  .container 
+    display: flex
+    justify-content: space-between
+    // flex-wrap: wrap
+    
+  .logo
+    position: relative
+    height: 125px
+    &_img       
+      img
+        height: 100%
+    h1 
+      font-size: 14px
+      font-weight: 300
+    &_text
+      position: absolute
+      right: -280px
+      bottom: 0
+      color: #ccc
+      
+  &_phone
+    position: relative
+    a
+      vertical-align: top
+      color: #ffffff
+      font-size: 21px 
+      span 
+        font-weight: 700
+        vertical-align: top
+    +r(1200)
+      width: 0
+      a 
+        width: 250px
+        right: -20px
+        vertical-align: bottom
+        bottom: 0
+        position: absolute
+        span 
+          vertical-align: bottom
+  &_menu 
+    font-size: 16px
+    ul 
+      display: flex
+      width: 700px
+      justify-content: space-betweens
+      li 
+        
+        a 
+          color: #ffffff
+    +r(950)
+      display: none
+
+  +r(900)
+    .logo
+      &_text
+        right: -240px
+      h1 
+        font-size: 12px
+    &_phone
+      a
+        width: 210px
+        font-size: 16px
+        span 
+          vertical-align: sub
+          font-size: 24px
+  +r(700)
+    &_phone
+      display: none
+    .logo
+      &_text
+        margin-left: -10px
+        right: -70px
+        bottom: -70px
